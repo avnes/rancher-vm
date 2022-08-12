@@ -3,13 +3,13 @@ network_name = "bridged-network"
 domain_name = "localdoman"
 
 nodes = {
-     "loadbalancer-node"     = {
-        name        = "rancher-lb",
-        vcpu        = 1,
-        memory      = "2048",
-        disk_pool   = "default",
-        disk_size   = "50000000000",
-        mac         = "52:54:00:11:13:00",
+     "loadbalancer-node" = {
+        name             = "rancher-lb",
+        vcpu             = 1,
+        memory           = "2048",
+        disk_pool        = "default",
+        disk_size        = "50000000000",
+        mac              = "52:54:00:11:13:00",
     },
     "ctrl-node01"   = {
         name        = "rancher-ctrl01",
