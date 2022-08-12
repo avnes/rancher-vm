@@ -52,7 +52,7 @@ nodes = {
         mac         = "52:54:00:11:13:05",
     },
     "worker-node03" = {
-        name        = "rke-node03",
+        name        = "rancher-node03",
         vcpu        = 1,
         memory      = "2048",
         disk_pool   = "default",
