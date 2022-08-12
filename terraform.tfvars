@@ -1,6 +1,6 @@
 project_name = "rancher"
 network_name = "bridged-network"
-domain_name = "localdoman"
+domain_name = "localdomain"
 
 nodes = {
      "loadbalancer-node" = {
