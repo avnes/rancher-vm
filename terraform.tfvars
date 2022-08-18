@@ -4,36 +4,12 @@ domain_name = "localdomain"
 
 nodes = {
      "loadbalancer-node" = {
-        name             = "rancher-lb",
+        name             = "rancher-controlplane",
         vcpu             = 1,
-        memory           = "2048",
+        memory           = "8192",
         disk_pool        = "default",
         disk_size        = "50000000000",
         mac              = "52:54:00:11:13:00",
-    },
-    "ctrl-node01"   = {
-        name        = "rancher-ctrl01",
-        vcpu        = 1,
-        memory      = "4096",
-        disk_pool   = "default",
-        disk_size   = "50000000000",
-        mac         = "52:54:00:11:13:01",
-    },
-    "ctrl-node02"   = {
-        name        = "rancher-ctrl02",
-        vcpu        = 1,
-        memory      = "4096",
-        disk_pool   = "default",
-        disk_size   = "50000000000",
-        mac         = "52:54:00:11:13:02",
-    },
-    "ctrl-node03"   = {
-        name        = "rancher-ctrl03",
-        vcpu        = 1,
-        memory      = "4096",
-        disk_pool   = "default",
-        disk_size   = "50000000000",
-        mac         = "52:54:00:11:13:03",
     },
     "worker-node01" = {
         name        = "rancher-node01",
@@ -41,7 +17,7 @@ nodes = {
         memory      = "2048",
         disk_pool   = "default",
         disk_size   = "50000000000",
-        mac         = "52:54:00:11:13:04",
+        mac         = "52:54:00:11:13:01",
     },
     "worker-node02" = {
         name        = "rancher-node02",
@@ -49,7 +25,7 @@ nodes = {
         memory      = "2048",
         disk_pool   = "default",
         disk_size   = "50000000000",
-        mac         = "52:54:00:11:13:05",
+        mac         = "52:54:00:11:13:02",
     },
     "worker-node03" = {
         name        = "rancher-node03",
@@ -57,6 +33,6 @@ nodes = {
         memory      = "2048",
         disk_pool   = "default",
         disk_size   = "50000000000",
-        mac         = "52:54:00:11:13:06",
+        mac         = "52:54:00:11:13:03",
     },
 }
