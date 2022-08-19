@@ -3,7 +3,7 @@ network_name = "bridged-network"
 domain_name = "localdomain"
 
 nodes = {
-     "loadbalancer-node" = {
+     "ctrl-node" = {
         name             = "rancher-controlplane",
         vcpu             = 1,
         memory           = "8192",
