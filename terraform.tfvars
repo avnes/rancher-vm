@@ -35,4 +35,12 @@ nodes = {
         disk_size   = "50000000000",
         mac         = "52:54:00:11:13:03",
     },
+    "loadbalancer" = {
+        name        = "rancher-lb",
+        vcpu        = 1,
+        memory      = "2048",
+        disk_pool   = "default",
+        disk_size   = "50000000000",
+        mac         = "52:54:00:11:13:09",
+    },
 }
