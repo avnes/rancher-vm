@@ -24,6 +24,6 @@ variable "nodes" {
 
 variable "custom_cmd" {
   type        = string
-  default     = "curl https://raw.githubusercontent.com/avnes/freehold/main/rancher-vm-override.sh | bash"
+  default     = "curl https://raw.githubusercontent.com/avnes/rancher-vm/main/rancher-vm-override.sh | bash"
   description = "Run one custom runcmd in cloud-init"
 }
