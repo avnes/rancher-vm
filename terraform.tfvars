@@ -5,7 +5,7 @@ domain_name = "localdomain"
 nodes = {
      "ctrl-node" = {
         name             = "rancher-controlplane",
-        vcpu             = 1,
+        vcpu             = 2,
         memory           = "8192",
         disk_pool        = "default",
         disk_size        = "50000000000",
@@ -13,7 +13,7 @@ nodes = {
     },
     "worker-node01" = {
         name        = "rancher-node01",
-        vcpu        = 1,
+        vcpu        = 2,
         memory      = "2048",
         disk_pool   = "default",
         disk_size   = "50000000000",
@@ -21,7 +21,7 @@ nodes = {
     },
     "worker-node02" = {
         name        = "rancher-node02",
-        vcpu        = 1,
+        vcpu        = 2,
         memory      = "2048",
         disk_pool   = "default",
         disk_size   = "50000000000",
@@ -29,7 +29,7 @@ nodes = {
     },
     "worker-node03" = {
         name        = "rancher-node03",
-        vcpu        = 1,
+        vcpu        = 2,
         memory      = "2048",
         disk_pool   = "default",
         disk_size   = "50000000000",
