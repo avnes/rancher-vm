@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configure DNS
-curl https://raw.githubusercontent.com/avnes/freehold/main/vm-dns-override.sh | bash
+#curl https://raw.githubusercontent.com/avnes/freehold/main/vm-dns-override.sh | bash
 
 cat <<EOF | tee /etc/sysctl.d/99-kubernetes-cri.conf
 net.bridge.bridge-nf-call-iptables = 1
@@ -41,7 +41,7 @@ systemctl start docker
 
 # Install and configure HA proxy on rancher-lb
 
-if [[ $(hostname) == 'rancher-lb' ]]; then
+if [[ $(hostname) == 'rancher-controlplane' || $(hostname) == 'rancher-controlplane.anyops.site' ]]; then
     dnf -y install haproxy
     cat <<EOF | tee /etc/haproxy/conf.d/rancher.cfg
 #---------------------------------------------------------------------
