@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configure DNS
-#curl https://raw.githubusercontent.com/avnes/freehold/main/vm-dns-override.sh | bash
+#curl https://raw.githubusercontent.com/avnes/asgard/main/vm-dns-override.sh | bash
 
 cat <<EOF | tee /etc/sysctl.d/99-kubernetes-cri.conf
 net.bridge.bridge-nf-call-iptables = 1
